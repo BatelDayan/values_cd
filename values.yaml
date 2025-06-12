@@ -4,7 +4,7 @@ replicaCount: 1
 nodeName: node-worker-1
 
 image:
-  repository: batel123d/batel-basic-web
+  repository: batel123d/static-web
   tag: latest
   port: 80
   pullPolicy: Always
