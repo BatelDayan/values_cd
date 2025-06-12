@@ -1,0 +1,19 @@
+appName: batel-nginx
+namespace: batel
+replicaCount: 1
+nodeName: node-worker-1
+
+image:
+  repository: batel123d/batel-basic-web
+  tag: latest
+  port: 80
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  className: nginx
+  path: /batel 
